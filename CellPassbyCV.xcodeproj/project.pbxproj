@@ -13,6 +13,9 @@
 		20A1AE3C24E00DBF00F7FFDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20A1AE3A24E00DBF00F7FFDA /* Main.storyboard */; };
 		20A1AE3E24E00DC200F7FFDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20A1AE3D24E00DC200F7FFDA /* Assets.xcassets */; };
 		20A1AE4124E00DC200F7FFDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20A1AE3F24E00DC200F7FFDA /* LaunchScreen.storyboard */; };
+		20A1AE4B24E00E1800F7FFDA /* KDDragAndDropManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A1AE4924E00E1800F7FFDA /* KDDragAndDropManager.swift */; };
+		20A1AE4C24E00E1800F7FFDA /* KDDragAndDropCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A1AE4A24E00E1800F7FFDA /* KDDragAndDropCollectionView.swift */; };
+		20A1AE5024E0129300F7FFDA /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A1AE4F24E0129300F7FFDA /* ColorCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		20A1AE3D24E00DC200F7FFDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20A1AE4024E00DC200F7FFDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20A1AE4224E00DC200F7FFDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20A1AE4924E00E1800F7FFDA /* KDDragAndDropManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDDragAndDropManager.swift; sourceTree = "<group>"; };
+		20A1AE4A24E00E1800F7FFDA /* KDDragAndDropCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KDDragAndDropCollectionView.swift; sourceTree = "<group>"; };
+		20A1AE4F24E0129300F7FFDA /* ColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 		20A1AE3324E00DBF00F7FFDA /* CellPassbyCV */ = {
 			isa = PBXGroup;
 			children = (
+				20A1AE4824E00DD500F7FFDA /* ClassesofCV */,
 				20A1AE3424E00DBF00F7FFDA /* AppDelegate.swift */,
 				20A1AE3624E00DBF00F7FFDA /* SceneDelegate.swift */,
 				20A1AE3824E00DBF00F7FFDA /* ViewController.swift */,
@@ -63,8 +70,18 @@
 				20A1AE3D24E00DC200F7FFDA /* Assets.xcassets */,
 				20A1AE3F24E00DC200F7FFDA /* LaunchScreen.storyboard */,
 				20A1AE4224E00DC200F7FFDA /* Info.plist */,
+				20A1AE4F24E0129300F7FFDA /* ColorCell.swift */,
 			);
 			path = CellPassbyCV;
+			sourceTree = "<group>";
+		};
+		20A1AE4824E00DD500F7FFDA /* ClassesofCV */ = {
+			isa = PBXGroup;
+			children = (
+				20A1AE4A24E00E1800F7FFDA /* KDDragAndDropCollectionView.swift */,
+				20A1AE4924E00E1800F7FFDA /* KDDragAndDropManager.swift */,
+			);
+			path = ClassesofCV;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +156,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				20A1AE3924E00DBF00F7FFDA /* ViewController.swift in Sources */,
+				20A1AE4B24E00E1800F7FFDA /* KDDragAndDropManager.swift in Sources */,
 				20A1AE3524E00DBF00F7FFDA /* AppDelegate.swift in Sources */,
+				20A1AE4C24E00E1800F7FFDA /* KDDragAndDropCollectionView.swift in Sources */,
 				20A1AE3724E00DBF00F7FFDA /* SceneDelegate.swift in Sources */,
+				20A1AE5024E0129300F7FFDA /* ColorCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +307,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GSA54HZN69;
 				INFOPLIST_FILE = CellPassbyCV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +326,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GSA54HZN69;
 				INFOPLIST_FILE = CellPassbyCV/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
